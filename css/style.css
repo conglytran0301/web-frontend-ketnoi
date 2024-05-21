@@ -55,6 +55,7 @@ p {
 .navbar-nav {
   width: 600px;
 }
+
 /*--------------------------carousel header--------------------------*/
 .carousel-style {
   background: black;
@@ -74,9 +75,9 @@ p {
 }
 
 /*------------------------------contact------------------------------*/
+
 .contact-style {
   background-color: #f8f8f8;
-
   padding: 30px 80px 80px;
 }
 .contact-style img {
@@ -92,6 +93,16 @@ p {
   font-weight: 600;
   text-transform: uppercase;
 }
+.col-md-8{
+  background: linear-gradient(#f3f734, #ee5dd3);
+}
+.info{
+  background: linear-gradient(#25a8f3, #58f1cb);
+}
+.form-control{
+  background: linear-gradient(#1fdfe6, #89f34c);
+}
+
 /*-----------------------------------section share BDH----------------------*/
 .share-style {
   margin: 100px auto 0;
@@ -153,42 +164,47 @@ p {
 }
 
 /*-----------------------------------section footer----------------------*/
+
+/*-----------------------------------section footer----------------------*/
 .footer-top {
-  background-color: #e9e51c;
+  background: linear-gradient(#f7f320, #bedd0f);
   padding: 50px 120px;
 }
 .footer-bottom {
   background-color: #87c981;
   padding: 1px;
 }
+form input{
+  width: 300px;
+  height: 45px;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  outline: none;
+  border: none;
+}
+form button{
+  background: transparent;
+  border: 2px solid #000000;
+  color: #000000;
+  border-radius: 30px;
+  padding: 5px 20px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
 .fa-facebook:hover,
 .fa-tiktok:hover,
 .fa-youtube:hover {
   color: #0e9adb;
 }
+
+
 /*----------------------------------end style index.html------------------------*/
 
 /*-----------------------------------style sinhvien.html------------------------------*/
-@media (min-width: 576px) {
-  .footer-top {
-    flex-basis: 70%;
-  }
-  #slidebar {
-    flex-basis: 30%;
-  }
-}
 
-@media (min-width: 768px) {
-
-}
-
-@media (min-width: 992px) {
-  
-}
-
-@media (min-width: 1200px) {
-  
-}
 
 /*-----------------------------------list student------------------------------*/
 /*hover card*/
