@@ -22,6 +22,22 @@
     <link rel="stylesheet" href="css/effect.css">
     <!--animate on Aos library css-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+      .img-hover-zoom img {
+        transition: transform 0.5s ease;
+      }
+      .img-hover-zoom:hover img {
+        transform: scale(1.1);
+      }
+      .title-card-style {
+        background-color: #f8f9fa;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .product-card {
+        height: 10%; /* Ensure all cards are of equal height */
+      }
+    </style>
   </head>
   <body>
     <!------------------------menu---------------------------->
@@ -189,306 +205,145 @@
 
     <!------------------------------end header------------------------------>
 
-    <!------------------------------title CLB------------------------------>
-    <div class="text-center mt-5 pt-5" >
-      <h2>Gây Quỹ Thiện Nguyện</h2>
-      <div class="col-lg-5 line mx-auto mb-3"></div>
-      <div class="col-lg-10 mx-auto mb-5">
-        <h6>
-          Lưu ý!: Câu lạc bộ chỉ hoạt động gây quỹ theo đợt của các chương trình thiện nguyện.
-        </h6>
+    <!------------------------------title Gây Qũy------------------------------>
+     <!-- Title Section -->
+  <div class="text-center mt-5 pt-5">
+    <h2>Shop</h2>
+    <div class="col-lg-5 line mx-auto mb-3"></div>
+    <div class="col-lg-10 mx-auto mb-5">
+      <h6>
+        Lưu ý!: Cửa hàng chỉ hoạt động trực tuyến.
+      </h6>
+    </div>
+  </div>
+
+  <!-- Products Section -->
+  <div class="container">
+    <!-- Row 1 -->
+    <div class="row mb-5">
+      <div class="col-lg-4 title-card-style text-center py-2" data-aos="fade-up">
+        <h3 class="mb-0">Sản phẩm nổi bật</h3>
       </div>
     </div>
-    <!------------------------------end title CLB------------------------------>
-    
-    <div class="container">
-      <!-------row clb 1------->
-      <!--title-->
-      <div class="row mb-5">
-        <div class="col-lg-4 title-card-style text-center py-2" data-aos="fade-up">
-          <h3 class="mb-0">
-            Nụ Cười Đến Lớp 2024
-          </h3>
-        </div>
-      </div>
-      <!--end title-->
-      <!-------------------------------modal boostrap for all card----------------------------->
-      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="emyModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-          <!--content-->
-          <div class="modal-content">
-            <!--header modal-->
-            <div class="modal-header">
-              <h5 class="modal-title">Video Review</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <!--body modal-->
-            <div class="modal-body">
-              <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/9xTtsV3nWwc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-            </div>
-            <!--footer modal-->
-            <div class="modal-footer justify-content-center">
-              <a href="#" type="button" class="btn-floating btn-sm">
-                <i class="fab fa-facebook fa-2x"></i>
-              </a>
-              <span>Tham gia ngay!</span>
-              
-              <button type="button" class="btn btn-outline-primary btn-md ml-5" data-dismiss="modal">
-                Close
-              </button>
-            </div>
-          </div>
-          <!--end content-->
-        </div>
-      </div>
-      <!-------------------------------end modal boostrap for all card------------------------->
-      <!--row clb 1-->
-      <div class="row mb-5" data-aos="fade-up">
-        <div class="col-lg-4">
-          <div class="card style-CLB img-hover-zoom img-hover-zoom" data-aos="fade-right">
-            <!-----img link modal------>
-            <a><img src="imgs/CLB PTIT/img-1.png" 
-              class="card-img-top img-fluid" 
-              alt="..."
-              data-toggle="modal" 
-              data-target="#myModal">
-            </a>
-            <!------end img link modal--->
-            <div class="card-body">
-              <h5 class="card-title">Chủ đề: Ánh Bình Minh</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <ul class="list-group list-group">
-                <li class="list-group-item"><i class="fas fa-calendar-alt mr-2"></i>Năm: 2024</li>
-                <li class="list-group-item"><i class="fas fa-user mr-2 "></i>Chủ nhiệm: Trương Ngọc Xuân Thư</li>
-                <li class="list-group-item"><i class="fas fa-envelope-open-text mr-2 "></i>@gmail.com</li>
-                <li class="list-group-item"><i class="fas fa-phone-alt mr-2 "></i>(808) 555-0111</li>
-                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">
-                  <i class="fab fa-facebook  mr-2"></i>Link Facebook</a>
-              </ul>
-            </div>
-          </div>
-        </div>
 
-        <div class="col-lg-4">
-          <div class="card style-CLB img-hover-zoom img-hover-zoom">
-            <!---img link modal--> 
-            <a><img src="imgs/CLB PTIT/img-2.png" 
-              class="card-img-top img-fluid" 
-              alt="..." 
-              data-toggle="modal"
-              data-target="#myModal"></a>
-            <!--end img link modal-->
-            <div class="card-body">
-              <h5 class="card-title">Chủ đề:</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <ul class="list-group list-group">
-                <li class="list-group-item"><i class="fas fa-calendar-alt mr-2"></i>Năm: 2023</li>
-                <li class="list-group-item"><i class="fas fa-user mr-2 "></i>Chủ nhiệm:</li>
-                <li class="list-group-item"><i class="fas fa-envelope-open-text mr-2 "></i>@gmail.com</li>
-                <li class="list-group-item"><i class="fas fa-phone-alt mr-2 "></i>(808) 555-0111</li>
-                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">
-                  <i class="fab fa-facebook  mr-2"></i>Link Facebook</a>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4">
-          <div class="card style-CLB img-hover-zoom img-hover-zoom "data-aos="fade-left">
-            <!----img link modal----->
-            <a><img src="imgs/CLB PTIT/img-3.png" class="card-img-top img-fluid" alt="..."
-              data-toggle="modal"
-              data-target="#myModal">
-            </a>
-            <!-----end img link modal------->
-            <div class="card-body">
-              <h5 class="card-title">Chủ đề:</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <ul class="list-group list-group">
-                <li class="list-group-item"><i class="fas fa-calendar-alt mr-2"></i>Năm: 2022</li>
-                <li class="list-group-item"><i class="fas fa-user mr-2 "></i>Chủ nhiệm:</li>
-                <li class="list-group-item"><i class="fas fa-envelope-open-text mr-2 "></i>clb.ketnoi@student.ptithcm.edu.vn</li>
-                <li class="list-group-item"><i class="fas fa-phone-alt mr-2 "></i>(808) 555-0111</li>
-                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">
-                  <i class="fab fa-facebook  mr-2"></i>Link Facebook</a>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <!-------row clb 2------->
-      <!--title-->
-      <div class="row mb-5">
-        <div class="col-lg-4 title-card-style text-center py-2" data-aos="fade-up">
-          <h3 class="mb-0">
-            Tết Tình Thân
-          </h3>
-        </div>
-      </div>
-      <!--end title-->
-      <div class="row mb-5" data-aos="fade-up">
-        <div class="col-lg-4 ">
-          <div class="card style-CLB img-hover-zoom img-hover-zoom" data-aos="fade-right">
-            <!-------img link modal------>
-            <a>
-              <img src="imgs/CLB PTIT/img-4.png" class="card-img-top" alt="..."
-              data-toggle="modal"
-              data-target="#myModal">
-            </a>
-            <!-------end img link modal------->
-            <div class="card-body">
-              <h5 class="card-title">Chủ đề:</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <ul class="list-group list-group ">
-                <li class="list-group-item"><i class="fas fa-calendar-alt mr-2"></i>Năm:</li>
-                <li class="list-group-item"><i class="fas fa-user mr-2 "></i>Chủ nhiệm:</li>
-                <li class="list-group-item"><i class="fas fa-envelope-open-text mr-2 "></i>clb.ketnoi@student.ptithcm.edu.vn</li>
-                <li class="list-group-item"><i class="fas fa-phone-alt mr-2 "></i>(808) 555-0111</li>
-                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">
-                  <i class="fab fa-facebook  mr-2"></i>Link Facebook</a>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4">
-          <div class="card style-CLB img-hover-zoom img-hover-zoom">
-            <!----img link modal----->
-            <a>
-              <img src="imgs/CLB PTIT/img-5.png" class="card-img-top" alt="..."
-              data-toggle="modal"
-              data-target="#myModal">
-            </a>
-            <!----end img link modal----->
-            <div class="card-body">
-              <h5 class="card-title">Chủ đề:</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <ul class="list-group list-group">
-                <li class="list-group-item"><i class="fas fa-calendar-alt mr-2"></i>Năm:</li>
-                <li class="list-group-item"><i class="fas fa-user mr-2 "></i>Chủ nhiệm:</li>
-                <li class="list-group-item"><i class="fas fa-envelope-open-text mr-2 "></i>clb.ketnoi@student.ptithcm.edu.vn</li>
-                <li class="list-group-item"><i class="fas fa-phone-alt mr-2 "></i>(808) 555-0111</li>
-                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">
-                  <i class="fab fa-facebook  mr-2"></i>Link Facebook</a>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4">
-          <div class="card style-CLB img-hover-zoom img-hover-zoom" data-aos="fade-left">
-            <!-----img link modal----->
-            <a>
-              <img src="imgs/CLB PTIT/img-6.png" class="card-img-top" alt="..."
-              data-toggle="modal"
-              data-target="#myModal">
-            </a>
-            <!------end img link modal----->
-            <div class="card-body">
-              <h5 class="card-title">Chủ đề:</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <ul class="list-group list-group">
-                <li class="list-group-item"><i class="fas fa-calendar-alt mr-2"></i>Năm:</li>
-                <li class="list-group-item"><i class="fas fa-user mr-2 "></i>Chủ nhiệm:</li>
-                <li class="list-group-item"><i class="fas fa-envelope-open-text mr-2 "></i>clb.ketnoi@student.ptithcm.edu.vn</li>
-                <li class="list-group-item"><i class="fas fa-phone-alt mr-2 "></i>(808) 555-0111</li>
-                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">
-                  <i class="fab fa-facebook  mr-2"></i>Link Facebook</a>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-------row clb 3------->
-      <!--title-->
-      <div class="row mb-5" data-aos="fade-up">
-        <div class="col-lg-4 title-card-style text-center py-2">
-          <h3 class="mb-0">
-            Sinh nhật CLB
-          </h3>
-        </div>
-      </div>
-      <!--end title-->
-      <div class="row mb-5" data-aos="fade-up">
-        <div class="col-lg-4">
-          <div class="card style-CLB img-hover-zoom img-hover-zoom" data-aos="fade-right">
-            <!---img link modal----->
-            <a>
-              <img src="imgs/CLB PTIT/img-7.png" class="card-img-top" alt="..." 
-              data-toggle="modal"
-              data-target="#myModal">
-            </a>
-            <!----end img link modal------>
-            <div class="card-body">
-              <h5 class="card-title">Chủ đề: 15 Năm Hành Trình Rực Rỡ</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <ul class="list-group list-group ">
-                <li class="list-group-item"><i class="fas fa-calendar-alt mr-2"></i>Năm: 2024</li>
-                <li class="list-group-item"><i class="fas fa-user mr-2 "></i>Chủ nhiệm:Trương Ngọc Xuân Thư</li>
-                <li class="list-group-item"><i class="fas fa-envelope-open-text mr-2 "></i>clb.ketnoi@student.ptithcm.edu.vn</li>
-                <li class="list-group-item"><i class="fas fa-phone-alt mr-2 "></i>(808) 555-0111</li>
-                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">
-                  <i class="fab fa-facebook  mr-2"></i>Link Facebook</a>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4">
-          <div class="card style-CLB img-hover-zoom img-hover-zoom">
-            <!---img link modal----->
-            <a>
-              <img src="imgs/CLB PTIT/img-8.png" class="card-img-top" alt="..."
-              data-toggle="modal"
-              data-target="#myModal">
-            </a>
-            <!----end img link modal------>
-            <div class="card-body">
-              <h5 class="card-title">Chủ đề:</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <ul class="list-group list-group-flush ">
-                <li class="list-group-item"><i class="fas fa-calendar-alt mr-2"></i>Năm:</li>
-                <li class="list-group-item"><i class="fas fa-user mr-2 "></i>Chủ nhiệm:</li>
-                <li class="list-group-item"><i class="fas fa-envelope-open-text mr-2 "></i>clb.ketnoi@student.ptithcm.edu.vn</li>
-                <li class="list-group-item"><i class="fas fa-phone-alt mr-2 "></i>(808) 555-0111</li>
-                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">
-                  <i class="fab fa-facebook  mr-2"></i>Link Facebook</a>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4">
-          <div class="card style-CLB img-hover-zoom img-hover-zoom" data-aos="fade-left">
-            <!---img link modal----->
-            <a>
-              <img src="imgs/CLB PTIT/img-9.png" class="card-img-top" alt="..."
-              data-toggle="modal"
-              data-target="#myModal">
-            </a>
-            <!----end img link modal------>
-            <div class="card-body">
-              <h5 class="card-title">Chủ đề:</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <ul class="list-group list-group ">
-                <li class="list-group-item"><i class="fas fa-calendar-alt mr-2"></i>Năm</li>
-                <li class="list-group-item"><i class="fas fa-user mr-2 "></i>Chủ nhiệm:</li>
-                <li class="list-group-item"><i class="fas fa-envelope-open-text mr-2 "></i>clb.ketnoi@student.ptithcm.edu.vn</li>
-                <li class="list-group-item"><i class="fas fa-phone-alt mr-2 "></i>(808) 555-0111</li>
-                <a href="#" class="list-group-item list-group-item-action list-group-item-primary">
-                  <i class="fab fa-facebook  mr-2"></i>Link Facebook</a>
-              </ul>
-            </div>
+    <!-- Product Cards -->
+    <div class="row mb-5" data-aos="fade-up">
+      <!-- Product 1 -->
+      <div class="col-lg-4">
+        <div class="card style-CLB img-hover-zoom img-hover-zoom" data-aos="fade-right">
+          <a>
+            <img src="imgs/CLB-home/img-1.png" class="card-img-top img-fluid product-img" alt="Product 1" data-toggle="modal" data-target="#myModal1">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Tên sản phẩm 1</h5>
+            <p class="card-text">Mô tả ngắn gọn về sản phẩm 1.</p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><i class="fas fa-tag mr-2"></i>Giá: 500,000 VND</li>
+            </ul>
           </div>
         </div>
       </div>
 
+      <!-- Product 2 -->
+      <div class="col-lg-4">
+        <div class="card style-CLB img-hover-zoom img-hover-zoom" data-aos="fade-right">
+          <a>
+            <img src="imgs/product2.png" class="card-img-top img-fluid product-img" alt="Product 2" data-toggle="modal" data-target="#myModal2">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Tên sản phẩm 2</h5>
+            <p class="card-text">Mô tả ngắn gọn về sản phẩm 2.</p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><i class="fas fa-tag mr-2"></i>Giá: 700,000 VND</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col-lg-4">
+        <div class="card style-CLB img-hover-zoom img-hover-zoom" data-aos="fade-left">
+          <a>
+            <img src="imgs/product3.png" class="card-img-top img-fluid product-img" alt="Product 3" data-toggle="modal" data-target="#myModal3">
+          </a>
+          <div class="card-body">
+            <h5 class="card-title">Tên sản phẩm 3</h5>
+            <p class="card-text">Mô tả ngắn gọn về sản phẩm 3.</p>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><i class="fas fa-tag mr-2"></i>Giá: 900,000 VND</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
+
+  <!-- Product Modals -->
+  <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="myModalLabel1">Chi tiết sản phẩm 1</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/example1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal-footer justify-content-center">
+          <a href="#" class="btn btn-outline-primary btn-md">Mua ngay</a>
+          <button type="button" class="btn btn-outline-secondary btn-md ml-5" data-dismiss="modal">Đóng</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="myModalLabel2">Chi tiết sản phẩm 2</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/example2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal-footer justify-content-center">
+          <a href="#" class="btn btn-outline-primary btn-md">Mua ngay</a>
+          <button type="button" class="btn btn-outline-secondary btn-md ml-5" data-dismiss="modal">Đóng</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="myModalLabel3">Chi tiết sản phẩm 3</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/example3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="modal-footer justify-content-center">
+          <a href="#" class="btn btn-outline-primary btn-md">Mua ngay</a>
+          <button type="button" class="btn btn-outline-secondary btn-md ml-5" data-dismiss="modal">Đóng</button>
+        </div>
+      </div>
+    </div>
+  </div>
     <!------------------------------footer------------------------------>
     <div class="container-fluid footer-top">
       <div class="row">
@@ -562,7 +417,7 @@
     </div>
     <div class="container-fluid text-center text-white footer-bottom">
       <hr  width="85%" size="5px" align="center" color="black" />
-      <h6 class="mb-3 py-6">@2024. Created by KetNoi</h6></div>
+      <p class="mb-3 py-6">@2024. Created by KetNoi</p></div>
 
       <!------------------------------end footer------------------------------>
       <!------------------------------btn go top page------------------------------>
