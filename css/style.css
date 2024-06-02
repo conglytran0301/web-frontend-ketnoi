@@ -219,45 +219,186 @@ p {
 .content-padding {
   padding-right: 15px; /* Added padding to the right */
 }
+/*-----------------------------------section BDH----------------------*/
 
-
-
-/*-----------------------------------section share BDH----------------------*/
-.share-style {
-  margin: 100px auto 0;
+/* Team Section */
+.team-section {
+  text-align: center;
 }
 
-.style-indicators {
-  margin-top: 30px;
+.team-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
 }
 
-.style-indicators li {
-  background-color: #6ca4f4;
+.white-line {
+  width: 85%;
+  height: 5px;
+  border: none;
+  background-color: white;
+  margin: 20px auto;
 }
 
-.testimonials .testimonials-wrap {
-  padding: 30px 120px 80px 120px;
+/* Team Member */
+.team-member {
+  margin-bottom: 40px;
 }
 
-.testimonials .testimonials-item {
-  border-radius: 25px;
-  background-color: #f8f8f8;
-  border: 1px solid #dadada;
-  transition: 0.5s;
+.team-member img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
 }
 
-.testimonials .testimonials-item:hover {
-  border: 1px solid #6ca4f4;
+.team-member h3 {
+  font-size: 1.25rem;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 
-.testimonials-item img {
-  padding-bottom: 25px;
+.team-member p {
+  font-size: 1rem;
+  color: #666;
 }
 
-.testimonials-item p {
-  margin-top: 15px;
-  margin-bottom: 30px;
+
+
+/*-----------------------------------section TV nói về Kết Nối----------------------*/
+
+/* Container styles */
+.container-fluid {
+  padding: 20px;
+  background-color: #f9f9f9;
 }
+
+.row {
+  display: flex;
+}
+
+.col {
+  flex: 1;
+  padding: 20px;
+}
+
+.left-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #4020f7; /* Màu xanh dương */
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+}
+
+.header-line {
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff; /* Đường gạch ngang dài màu trắng */
+  margin-bottom: 15px;
+}
+
+.youtube-section {
+  width: 100%;
+  text-align: center;
+}
+
+.embed-responsive {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 0;
+  padding: 56.25% 0 0 0; /* 16:9 aspect ratio */
+}
+
+.embed-responsive-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 5px solid #ccc;
+  border-radius: 10px;
+}
+
+/* Share Section */
+.share-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #ffffff; /* Chữ màu trắng */
+}
+
+.share-section img.profile-pic {
+  width: 75px; /* kích thước ảnh*/
+  height: 75px; /* kích thước ảnh*/
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.share-section h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff; /* Chữ màu trắng */
+}
+
+.share-section h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #a5aaad; /* Chữ màu trắng */
+}
+
+.short-line {
+  width: 50px;
+  height: 3px;
+  background-color: #ffc107; /* Đường gạch ngắn màu vàng */
+  margin-top: 5px;
+}
+
+/* Testimonial Content */
+.testimonial-content {
+  padding: 20px;
+  background-color: #4020f7; /* Màu xanh dương */
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+.testimonial-content p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff; /* Chữ màu trắng */
+}
+
+/* Media Queries */
+@media (max-width: 767px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .youtube-section, .share-style {
+    margin-bottom: 30px;
+  }
+
+  .share-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .share-section img.profile-pic {
+    margin-bottom: 10px;
+  }
+}
+
 
 /*-----------------------------------section event upcoming----------------------*/
 .style-event {
