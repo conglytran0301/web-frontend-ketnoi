@@ -377,27 +377,6 @@ p {
   color: #ffffff; /* Chữ màu trắng */
 }
 
-/* Media Queries */
-@media (max-width: 767px) {
-  .row {
-    flex-direction: column;
-  }
-
-  .youtube-section, .share-style {
-    margin-bottom: 30px;
-  }
-
-  .share-section {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .share-section img.profile-pic {
-    margin-bottom: 10px;
-  }
-}
-
-
 /*-----------------------------------section event upcoming----------------------*/
 .style-event {
   background-color: #f8f8f8;
@@ -851,74 +830,6 @@ h2, h3, h6 {
   color: #fff;
 }
 
-@media (max-width: 1200px) {
-  .carousel-inner {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .title-card-style {
-      width: 80%;
-      margin-bottom: 2rem;
-  }
-
-  .d-flex.flex-row.justify-content-start.mb-5 {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .carousel-item.active {
-      display: flex;
-      flex-direction: column;
-  }
-}
-
-@media (max-width: 768px) {
-  .title-card-style {
-      width: 90%;
-  }
-
-  .card-title {
-      font-size: 1.25rem;
-  }
-
-  .card-text {
-      font-size: .875rem;
-  }
-
-  .d-flex.flex-row.justify-content-start.mb-5 {
-      flex-direction: column;
-      align-items: center;
-  }
-}
-
-@media (max-width: 767.98px) {
-  .container {
-      padding-left: 1rem;
-      padding-right: 1rem;
-  }
-
-  .title-card-style {
-      width: 100%;
-      margin-bottom: 1rem;
-  }
-
-  .card-title {
-      font-size: 1.25rem;
-  }
-
-  .card-text {
-      font-size: .875rem;
-  }
-
-  .d-flex.flex-row.justify-content-start.mb-5 {
-      flex-direction: column;
-      align-items: center;
-  }
-}
-
-
-
 /*-----------------------------------end style Gây quỹ.html-------------------------*/
 
 /*--------------------------------------------------------------
@@ -941,8 +852,48 @@ h2, h3, h6 {
 
 /*-----------------------------------Mobile styles-------------------------*/
 
-/* Mobile styles */
-@media (max-width: 767.98px) {
+/* Media Queries */
+@media (max-width: 767px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .youtube-section, .share-style {
+    margin-bottom: 30px;
+  }
+
+  .share-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .share-section img.profile-pic {
+    margin-bottom: 10px;
+  }
+
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .title-card-style {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+  }
+
+  .card-text {
+    font-size: .875rem;
+  }
+
+  .d-flex.flex-row.justify-content-start.mb-5 {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .navbar-brand {
     display: flex;
     justify-content: center;
@@ -996,39 +947,28 @@ h2, h3, h6 {
   }
   .footer-top {
     padding: 20px 15px;
+    text-align: center;
   }
   .footer-bottom {
     padding: 10px;
+    text-align: center;
   }
   form input {
     font-size: 0.9rem;
+    width: 100%;
   }
   form button {
     font-size: 1rem;
   }
   .card-student-style {
-    padding: 15px;
+    padding: 20px;
   }
-  .listStudent {
-    padding: 20px 15px;
-  }
-  .profile-style {
-    padding: 20px 15px;
-  }
-  .sideBar {
-    padding: 20px 15px;
-  }
-  .listEventStyle {
-    padding: 20px 15px;
-  }
-  .infoEvents {
+  .listStudent, .profile-style, .sideBar, .listEventStyle, .infoEvents, .style-CLB {
     padding: 20px 15px;
   }
   .style-listPostRelated a {
-    padding: 10px;
-  }
-  .style-CLB {
-    padding: 20px 15px;
+    font-size: 1rem;
+    padding: 10px 15px;
   }
   .contact .info .address,
   .contact .info .email,
@@ -1046,70 +986,20 @@ h2, h3, h6 {
   .style-sideBar-events a:hover {
     background-color: #e0e0e0;
   }
-  .style-listPostRelated a {
-    font-size: 1rem;
-    padding: 10px 15px;
-  }
   .container-project {
     margin: 10px 0;
   }
   .overlay-project {
     padding: 10px;
   }
-  .footer-top,
-  .footer-bottom {
-    text-align: center;
-  }
-  .footer-top {
-    padding: 30px 15px;
-  }
-  .footer-bottom {
-    padding: 10px;
-  }
-}
-
-@media (max-width: 767.98px) {
   .navbar-brand img {
     width: 80%;
   }
   .navbar-nav {
     width: 100%;
   }
-  .intro-style {
-    margin: 20px auto;
-  }
-  .contact-style {
-    padding: 20px;
-  }
   .share-style {
     margin: 50px auto 0;
-  }
-  .style-event {
-    padding: 40px 20px;
-  }
-  .section-clb {
-    padding: 20px 20px 40px;
-  }
-  .footer-top {
-    padding: 20px 20px;
-  }
-  form input {
-    width: 100%;
-  }
-  .card-student-style {
-    padding: 20px;
-  }
-  .profile-style {
-    padding: 20px;
-  }
-  .listEventStyle {
-    padding: 20px;
-  }
-  .infoEvents {
-    padding: 20px;
-  }
-  .style-CLB {
-    padding: 20px;
   }
 }
 
@@ -1145,16 +1035,7 @@ h2, h3, h6 {
   .card-student-style {
     padding: 30px;
   }
-  .profile-style {
-    padding: 30px;
-  }
-  .listEventStyle {
-    padding: 30px;
-  }
-  .infoEvents {
-    padding: 30px;
-  }
-  .style-CLB {
+  .profile-style, .listEventStyle, .infoEvents, .style-CLB {
     padding: 30px;
   }
 }
@@ -1191,18 +1072,49 @@ h2, h3, h6 {
   .card-student-style {
     padding: 40px;
   }
-  .profile-style {
-    padding: 40px;
-  }
-  .listEventStyle {
-    padding: 40px;
-  }
-  .infoEvents {
-    padding: 40px;
-  }
-  .style-CLB {
+  .profile-style, .listEventStyle, .infoEvents, .style-CLB {
     padding: 40px;
   }
 }
 
+/* Media Queries for Specific Screen Sizes */
+/*@media (max-width: 1200px) {
+  .carousel-inner {
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .title-card-style {
+    width: 80%;
+    margin-bottom: 2rem;
+  }
+
+  .d-flex.flex-row.justify-content-start.mb-5 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carousel-item.active {
+    display: flex;
+    flex-direction: column;
+  }
+}*/
+
+/*@media (max-width: 768px) {
+  .title-card-style {
+    width: 90%;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+  }
+
+  .card-text {
+    font-size: .875rem;
+  }
+
+  .d-flex.flex-row.justify-content-start.mb-5 {
+    flex-direction: column;
+    align-items: center;
+  }
+}*/
