@@ -67,14 +67,11 @@ p {
 }
 
 .navbar {
-  /*shadow: x y blur*/
-  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
   border-bottom: 2px solid #dddddd;
-  z-index: 1;
-  background-color: #ffffff; /* Navbar background color */
+  background-color: #f8f9fa; /* Ensure background color is solid */
+  z-index: 1030; /* High enough to stay on top of other content */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow for better visibility */
 }
-
-.nav-item {}
 
 .navbar-nav {
   width: 600px;
@@ -83,6 +80,14 @@ p {
 .navbar-nav .nav-link {
   font-weight: bold; /* Chữ đậm */
 }
+
+
+/*@media (max-width: 767px) {
+  .navbar {
+    padding: 10px;
+  }
+}*/
+
 
 /*--------------------------carousel header--------------------------*/
 .carousel-style {
@@ -94,6 +99,80 @@ p {
   object-fit: cover;
   opacity: 0.4;
 }
+
+/* Navbar styles */
+.navbar {
+  background-color: #fff;
+}
+
+.navbar-nav .nav-link {
+  font-weight: bold;
+  color: #000;
+}
+
+.navbar-nav .nav-link.active {
+  color: #ffcc00;
+}
+
+/* Carousel styles */
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.carousel-caption h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.carousel-caption p {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 30px;  /* Adjust size as needed */
+  height: 30px; /* Adjust size as needed */
+  background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+  border-radius: 5px; /* Slight rounding, if you want fully square use 0 */
+}
+
+/* Mobile styles */
+/*@media (max-width: 767px) {
+  .carousel-caption {
+    top: auto;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    padding: 10px;
+  }
+
+  .carousel-caption h1 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+
+  .carousel-caption a.btn {
+    font-size: 0.875rem;
+  }
+
+  .navbar-collapse {
+    background-color: #fff;
+    padding: 1rem;
+  }
+}*/
+
 
 /*---------------------------section intro---------------------------*/
 .intro-style {
@@ -588,7 +667,7 @@ form button {
 }
 
 .style-indicators li {
-  background-color: #e76114;
+  background-color: #e76114; /* nút chuyển trang chia sẻ BDH*/
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -853,7 +932,34 @@ h2, h3, h6 {
 /*-----------------------------------Mobile styles-------------------------*/
 
 /* Media Queries */
+/* Mobile Styles */
 @media (max-width: 767px) {
+  .carousel-caption {
+    top: auto;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    padding: 10px;
+  }
+
+  .carousel-caption h1 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+
+  .carousel-caption a.btn {
+    font-size: 0.875rem;
+  }
+
+  .navbar-collapse {
+    background-color: #fff;
+    padding: 1rem;
+  }
+
   .row {
     flex-direction: column;
   }
@@ -886,7 +992,7 @@ h2, h3, h6 {
   }
 
   .card-text {
-    font-size: .875rem;
+    font-size: 0.875rem;
   }
 
   .d-flex.flex-row.justify-content-start.mb-5 {
@@ -899,105 +1005,135 @@ h2, h3, h6 {
     justify-content: center;
     width: 100%;
   }
+
   .navbar {
     box-shadow: none;
     border-bottom: none;
   }
+
   .nav-item {
     margin-bottom: 10px;
   }
+
   .carousel-style {
     height: auto;
   }
+
   .carousel-style img {
     height: auto;
   }
+
   .intro-style {
     margin: 20px auto;
     font-size: 1rem;
   }
+
   .intro-style p {
     font-size: 0.9rem;
   }
+
   .contact-style p {
     font-size: 0.9rem;
   }
+
   .testimonials .testimonials-wrap {
     padding: 20px 15px 40px;
   }
+
   .testimonials-item {
     padding: 20px 15px;
   }
+
   .testimonials-item p {
     font-size: 0.9rem;
   }
+
   .style-event {
     padding: 40px 15px;
     margin: 40px auto;
   }
+
   .style-event .card-body {
     padding: 10px;
   }
+
   .section-clb {
     padding: 20px 15px 40px;
   }
+
   .section-clb img {
     width: 100%;
     height: auto;
   }
+
   .footer-top {
     padding: 20px 15px;
     text-align: center;
   }
+
   .footer-bottom {
     padding: 10px;
     text-align: center;
   }
+
   form input {
     font-size: 0.9rem;
     width: 100%;
   }
+
   form button {
     font-size: 1rem;
   }
+
   .card-student-style {
     padding: 20px;
   }
+
   .listStudent, .profile-style, .sideBar, .listEventStyle, .infoEvents, .style-CLB {
     padding: 20px 15px;
   }
+
   .style-listPostRelated a {
     font-size: 1rem;
     padding: 10px 15px;
   }
+
   .contact .info .address,
   .contact .info .email,
   .contact .info .phone {
     font-size: 1rem;
     margin: 0 0 10px;
   }
+
   .contact-style a {
     font-size: 1rem;
   }
+
   .style-sideBar-events a {
     padding: 10px 15px;
     font-size: 0.9rem;
   }
+
   .style-sideBar-events a:hover {
     background-color: #e0e0e0;
   }
+
   .container-project {
     margin: 10px 0;
   }
+
   .overlay-project {
     padding: 10px;
   }
+
   .navbar-brand img {
     width: 80%;
   }
+
   .navbar-nav {
     width: 100%;
   }
+
   .share-style {
     margin: 50px auto 0;
   }
@@ -1006,35 +1142,55 @@ h2, h3, h6 {
 /* iPad Styles */
 @media (min-width: 768px) and (max-width: 1024px) {
   .navbar-brand img {
-    width: 60%;
+    width: 80%;;
   }
+
   .navbar-nav {
-    width: 80%;
+    width: 100%;
+    justify-content: space-between;
   }
+
+  .navbar-nav .nav-item {
+    flex: 1;
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item a {
+    white-space: nowrap;
+  }
+
   .intro-style {
     margin: 40px auto;
   }
+
   .contact-style {
     padding: 30px 40px 40px;
   }
+
   .share-style {
     margin: 70px auto 0;
   }
+
   .style-event {
     padding: 60px 40px;
   }
+
   .section-clb {
     padding: 30px 40px 60px;
   }
+
   .footer-top {
     padding: 30px 40px;
   }
+
   form input {
     width: 80%;
   }
+
   .card-student-style {
     padding: 30px;
   }
+
   .profile-style, .listEventStyle, .infoEvents, .style-CLB {
     padding: 30px;
   }
@@ -1043,39 +1199,60 @@ h2, h3, h6 {
 /* Tablet Styles */
 @media (min-width: 1024px) and (max-width: 1280px) {
   .navbar-brand img {
-    width: 50%;
+    width: 60%;
   }
+
   .navbar-nav {
-    width: 70%;
+    width: 100%;
+    justify-content: space-between;
   }
+
+  .navbar-nav .nav-item {
+    flex: 1;
+    text-align: center;
+  }
+
+  .navbar-nav .nav-item a {
+    white-space: nowrap;
+  }
+
   .intro-style {
     margin: 60px auto;
   }
+
   .contact-style {
     padding: 40px 60px 60px;
   }
+
   .share-style {
     margin: 90px auto 0;
   }
+
   .style-event {
     padding: 70px 60px;
   }
+
   .section-clb {
     padding: 40px 60px 70px;
   }
+
   .footer-top {
     padding: 40px 60px;
   }
+
   form input {
     width: 70%;
   }
+
   .card-student-style {
     padding: 40px;
   }
+
   .profile-style, .listEventStyle, .infoEvents, .style-CLB {
     padding: 40px;
   }
 }
+
 
 /* Media Queries for Specific Screen Sizes */
 /*@media (max-width: 1200px) {
