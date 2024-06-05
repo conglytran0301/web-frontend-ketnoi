@@ -82,13 +82,6 @@ p {
 }
 
 
-/*@media (max-width: 767px) {
-  .navbar {
-    padding: 10px;
-  }
-}*/
-
-
 /*--------------------------carousel header--------------------------*/
 .carousel-style {
   background: black;
@@ -117,11 +110,11 @@ p {
 /* Carousel styles */
 .carousel-caption {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  bottom: 0%;
+  left: 33%;
   transform: translate(-50%, -50%);
-  color: #fff;
-  text-align: center;
+  color: #ffffff;
+  text-align: left;
   padding: 20px;
   border-radius: 10px;
 }
@@ -129,50 +122,20 @@ p {
 .carousel-caption h1 {
   font-size: 3rem;
   font-weight: bold;
+  color: #fffb00;
 }
 
 .carousel-caption p {
   font-size: 1.5rem;
   margin-bottom: 1rem;
+  color: #0f1fff;
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  width: 30px;  /* Adjust size as needed */
-  height: 30px; /* Adjust size as needed */
-  background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
-  border-radius: 5px; /* Slight rounding, if you want fully square use 0 */
+  width: 40px;  /* Adjust size as needed */
+  height: 40px; /* Adjust size as needed */
 }
-
-/* Mobile styles */
-/*@media (max-width: 767px) {
-  .carousel-caption {
-    top: auto;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 90%;
-    padding: 10px;
-  }
-
-  .carousel-caption h1 {
-    font-size: 1.5rem;
-  }
-
-  .carousel-caption p {
-    font-size: 1rem;
-  }
-
-  .carousel-caption a.btn {
-    font-size: 0.875rem;
-  }
-
-  .navbar-collapse {
-    background-color: #fff;
-    padding: 1rem;
-  }
-}*/
-
 
 /*---------------------------section intro---------------------------*/
 .intro-style {
@@ -933,7 +896,24 @@ h2, h3, h6 {
 
 /* Media Queries */
 /* Mobile Styles */
+/* General Reset for Mobile */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Mobile Styles (max-width: 767px) */
 @media (max-width: 767px) {
+  body {
+    padding: 0 10px; /* Prevent content from touching the edges */
+  }
+
   .carousel-caption {
     top: auto;
     bottom: 20px;
@@ -1021,11 +1001,13 @@ h2, h3, h6 {
 
   .carousel-style img {
     height: auto;
+    width: 100%;
   }
 
   .intro-style {
     margin: 20px auto;
     font-size: 1rem;
+    text-align: center; /* Center text content */
   }
 
   .intro-style p {
@@ -1139,10 +1121,14 @@ h2, h3, h6 {
   }
 }
 
-/* iPad Styles */
+/* iPad Styles (768px to 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
+  body {
+    padding: 0 15px; /* Prevent content from touching the edges */
+  }
+
   .navbar-brand img {
-    width: 80%;;
+    width: 80%;
   }
 
   .navbar-nav {
@@ -1161,6 +1147,7 @@ h2, h3, h6 {
 
   .intro-style {
     margin: 40px auto;
+    text-align: center; /* Center text content */
   }
 
   .contact-style {
@@ -1196,8 +1183,12 @@ h2, h3, h6 {
   }
 }
 
-/* Tablet Styles */
+/* Tablet Styles (1024px to 1280px) */
 @media (min-width: 1024px) and (max-width: 1280px) {
+  body {
+    padding: 0 20px; /* Prevent content from touching the edges */
+  }
+
   .navbar-brand img {
     width: 60%;
   }
@@ -1218,6 +1209,7 @@ h2, h3, h6 {
 
   .intro-style {
     margin: 60px auto;
+    text-align: center; /* Center text content */
   }
 
   .contact-style {
@@ -1252,46 +1244,3 @@ h2, h3, h6 {
     padding: 40px;
   }
 }
-
-
-/* Media Queries for Specific Screen Sizes */
-/*@media (max-width: 1200px) {
-  .carousel-inner {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .title-card-style {
-    width: 80%;
-    margin-bottom: 2rem;
-  }
-
-  .d-flex.flex-row.justify-content-start.mb-5 {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .carousel-item.active {
-    display: flex;
-    flex-direction: column;
-  }
-}*/
-
-/*@media (max-width: 768px) {
-  .title-card-style {
-    width: 90%;
-  }
-
-  .card-title {
-    font-size: 1.25rem;
-  }
-
-  .card-text {
-    font-size: .875rem;
-  }
-
-  .d-flex.flex-row.justify-content-start.mb-5 {
-    flex-direction: column;
-    align-items: center;
-  }
-}*/
